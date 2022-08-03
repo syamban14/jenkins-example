@@ -27,10 +27,13 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: |
+      - run: |
           echo Building
           mkdir build
           touch build/info.txt
+          
+          artifacts:
+            - paths: build
           
       - name: Run testing
       - run: |
