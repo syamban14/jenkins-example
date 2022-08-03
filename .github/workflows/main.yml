@@ -32,10 +32,6 @@ jobs:
           mkdir build
           touch build/info.txt
           
-          artifacts:
-            - paths: build
-          
       - name: Run testing
       - run: |
           echo Testing
-          test -f build/info.txt
